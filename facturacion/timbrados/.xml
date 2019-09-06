@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd " Version="3.3" Fecha="2017-08-06T22:17:45" Serie="A" Folio="100" FormaPago="01" LugarExpedicion="45079" TipoDeComprobante="I" MetodoPago="PUE" Moneda="MXN" SubTotal="298" Total="329.84" Certificado="MIIEXTCCA0WgAwIBAgIUMDAwMDEwMDAwMDAzMDQxMzI1MTcwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xNDA1MTQxODMxMDZaFw0xODA1MTQxODMxMDZaMIGpMR8wHQYDVQQDExZGRVJOQU5ETyBHVVpNQU4gQUdVQURPMR8wHQYDVQQpExZGRVJOQU5ETyBHVVpNQU4gQUdVQURPMR8wHQYDVQQKExZGRVJOQU5ETyBHVVpNQU4gQUdVQURPMRYwFAYDVQQtEw1HVUFGODgwNjAxTkE2MRswGQYDVQQFExJHVUFGODgwNjAxSERGWkdSMDQxDzANBgNVBAsTBk1hdHJpejCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAqFG2lV+mHuz2oSGzqqTKBHyY7Jj9kdQ0xdAg9ZaVJpcOJY/u9CApmPWx8AdvLuzSQ9EduE9xBp2sJdiwqGwjyY2bEW2+q3xeLgI7ERIzDAoQLw/cL8mPULz9H4vzt8FJieR70+hd4E28koIirYQ+8d9KZ894X1n5YbM6gmBg/+ECAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBACjYZXna79qWGxwLA4RZ2lBxoJOUGcx0XbTOgmKPVTd26Go4hKh2/X5aV2QLZZw/eK25aFATkyjobR9gbBPP+qNNlx6mPs6IlqLNCMvDyOnmYZjXIARalFBQH8bjzcuMHZi2ufQcigxtx4GI6wIvFygj6/AQCeTsNpSJUGKeRu+jHUS2V2UsSPG2VhncVizuGyBAHts/padT8r9OXSq29Fj1UV2WawQJu//4onE49h0t1M773cR+C8uUqPmXUrkWRMtxjMpsWA4FCoyWok773M83qDBbAKGxPabyX3nRpJ933KpVKydsVP5QYO6/iYpNKtRLZq+nLygrYZ32qy3Xj2A=" NoCertificado="00001000000304132517" Sello="XWBBEk1Mjx5MliPkwyo46f+4Qbc4/Tm9lpaJoqnS2sJo8iEqOUtEBWsRpcBf53cfp6b8p7nNnD0nfsRW5/vhNQYgOexDA1kW5VTNnCyxSSGVZPjSTbD7oMInQD24FxcDQju1NTNrD+be0OVWmSafKSQhY7wDNhsVQlm1B4J7UNY=">
+  <cfdi:Emisor Rfc="GUAF880601NA6" Nombre="FERNANDO GUZMAN AGUADO" RegimenFiscal="612"/>
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="Publico General" UsoCFDI="D10"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto Cantidad="1" Unidad="NA" NoIdentificacion="1726" Descripcion="un bubu" ValorUnitario="99" Importe="99" ClaveProdServ="01010101" ClaveUnidad="ACT"/>
+    <cfdi:Concepto Cantidad="1" Unidad="NA" NoIdentificacion="1586" Descripcion="un toby" ValorUnitario="199" Importe="199" ClaveProdServ="01010101" ClaveUnidad="ACT">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="199" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="31.84"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="31.84">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TasaOCuota="0.160000" Importe="31.84" TipoFactor="Tasa"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="93ec8a1e-1776-439f-91c3-28f3cf5f52bd" FechaTimbrado="2017-08-06T22:19:53" RfcProvCertif="AAA010101AAA" SelloCFD="XWBBEk1Mjx5MliPkwyo46f+4Qbc4/Tm9lpaJoqnS2sJo8iEqOUtEBWsRpcBf53cfp6b8p7nNnD0nfsRW5/vhNQYgOexDA1kW5VTNnCyxSSGVZPjSTbD7oMInQD24FxcDQju1NTNrD+be0OVWmSafKSQhY7wDNhsVQlm1B4J7UNY=" NoCertificadoSAT="20001000000300022323" SelloSAT="Fn/orMYnDy+DLinLW5zHkd0X2kwG4KZgMOv1r96xOfpIeH3VjHoB0Tm/sceQHb3n4Fh/1BXvB8CNRK4VYyTjOfAbp94UbmGVzRPmVKEeHrK8z50/zmH9ce/gUxcistqhZldAxbHX5VQrbqLDtG0mKD8IOC7GND9Mxob1G92xKNimA5QTqjd2NFUo+JlOWM/k4jt07If7axrePDFLqHe+gaw8LkqX6e2549TSuiN3fOPLeyWEqEAZOSVODgs1h6Rt615QfMHphJqkjIXPHRn/h73ca5NvNYrhWa2Q2fDNx2p8FMGXeAgwllEOVoOXnmZrmNJygwvJSgQ4cu1hoOyPbQ=="/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>
