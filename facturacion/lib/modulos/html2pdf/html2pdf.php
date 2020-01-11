@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL);
+error_reporting(0);
 // reference the Dompdf namespace
 use Dompdf\Dompdf;
 function ___html2pdf($datos)

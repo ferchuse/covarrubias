@@ -89,10 +89,10 @@ $(document).ready(function(){
 	});
 	
 	$( "#nombre_empleados" ).autocomplete({
-		source: "control/search_json.php?tabla=alumnos&campo=nombre_alumnos&valor=nombre_alumnos&etiqueta=nombre_alumnos",
+		source: "control/search_json.php?tabla=empleados&campo=nombre_empleados&valor=nombre_empleados&etiqueta=nombre_empleados",
 		minLength : 2,
 		autoFocus: true,
-		select: function seleccionaAlumno( event, ui ) {
+		select: function seleccionaEmpleado( event, ui ) {
 			
 			$("#id_empleados").val(ui.item.extras.id_empleados);
 			$("#curp_empleados").val(ui.item.extras.curp_empleados);

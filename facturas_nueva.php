@@ -253,6 +253,7 @@
 													<select disabled name="clave_productos[]" class="form-control conceptos">
 														<option>86121500</option>
 														<option>86121501</option>
+														<option>86121503</option>
 													</select >
 												</div>	 
 												<div class="form-group col-sm-4">

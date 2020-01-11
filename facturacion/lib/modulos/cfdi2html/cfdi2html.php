@@ -1,11 +1,14 @@
 <?php
+error_reporting(0);
 // <!-- phpDesigner :: Timestamp -->17/06/2016 12:34:32 p. m.<!-- /Timestamp -->
 function ___cfdi2html($datos)
 {
+    
     include "num2letras.php";
     include "imprime.php";
     
     //LEER EL XML PARA GENERAR EL QR
+    
     $xml_datos=leer_xml($datos['rutaxml']);
     $rfc_emisor=$xml_datos['rfc_emisor'];
     $rfc_receptor=$xml_datos['receptor_rfc'];
@@ -14,11 +17,13 @@ function ___cfdi2html($datos)
     $monto=sprintf("%1.6f",$monto);
     $cadenaqr = "?re=$rfc_emisor&rr=$rfc_receptor&tt=$monto&id=$uuid";
     //ARCHIVO PNG QR
-    $png=explode(".",$datos['rutaxml']);
-    $png=$png[0];
-    $archivo_png=$png.".png";
+    $archivo_png=str_replace(".xml",".png",$datos['rutaxml']);
+    
     if(!file_exists($archivo_png))
     {
+        //include_once "../../sdk2.php";
+        //include_once "../../lib/modulos/qr/qr.php";
+        
         //MODULO MULTIFACTURAS QUE CREA QR PNG DE UN XML CFDI 
         $datosQR['modulo']="qr";
         $datosQR['PAC']['usuario'] = "DEMO700101XXX";
@@ -26,7 +31,9 @@ function ___cfdi2html($datos)
         $datosQR['PAC']['produccion'] = "NO";
         $datosQR['cadena']=$cadenaqr;
         $datosQR['archivo_png']=$archivo_png;
-        $res = cargar_modulo_multifacturas($datosQR);
+        $res = mf_ejecuta_modulo($datosQR);
+        //$res = ___qr($datosQR);
+        
     }
     //
     

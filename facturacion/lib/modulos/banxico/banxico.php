@@ -5,7 +5,7 @@
  * La funcion siempre debe comenzar con tres guiones bajo y el nombre del mismo archivo PHP
  * SIN extension, y recibir una variable; esta variable puede tener el nombre que se desee.
  */
-function mf_modulo_banxico($datos)
+function ___banxico($datos)
 {
     global $__mf_constantes__;
     // Si se recibieron todos los parametros se incluye nusoap
@@ -21,7 +21,7 @@ function mf_modulo_banxico($datos)
      * Siempre se debe de regresar un arreglo asociativo, es decir que los datos que se
      * pretendan devolver siempre se puedan identificar/localizar por medio de una cadena
      */
-	
+
 	$doc = new DOMDocument();
 	$doc->loadXML($resp);
 	

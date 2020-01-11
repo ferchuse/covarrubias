@@ -16,9 +16,9 @@
 	
 	if(isset($_GET['year_facturas'])){
 		
-		$query.=" WHERE YEAR(fecha_pago) = '".$_GET['year_facturas']."' ";
+		$query.=" WHERE YEAR(fecha_pago) = '{$_GET['year_facturas']}' ";
 		if($_GET['mes_facturas'] != ""){
-			$query.=" AND MONTH(fecha_pago) = '".$_GET['mes_facturas']."' ";
+		$query.=" AND MONTH(fecha_pago) = '{$_GET['mes_facturas']}' ";
 			
 		}
 		}elseif(isset($_GET['mes_facturas'])){
@@ -52,6 +52,8 @@
 			
 		}
 	?>
+	
+	
 	<tr>
 		<td class="text-center"><?php echo $folio_facturas; ?></td>
 		<td class="text-center"><small><?php echo strtoupper($uuid); ?></small></td>
@@ -98,4 +100,7 @@
 		<?php 
 		}
 	}
+	
+	
 ?>
+

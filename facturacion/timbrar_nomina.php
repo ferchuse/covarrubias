@@ -184,7 +184,7 @@
 	
 	$datos['nomina12']['TotalPercepciones'] = $_POST["total_percepciones"];
 	
-	$datos['nomina12']['TotalOtrosPagos'] = $_POST["total_otros_pagos"];
+
 	
 	
 	// NODO DEDUCCIONES
@@ -223,6 +223,8 @@
 	//NODO Otros Pagos
 	
 	if($_POST["total_otros_pagos"] > 0){
+	
+		$datos['nomina12']['TotalOtrosPagos'] = $_POST["total_otros_pagos"];
 		
 		foreach($_POST["otros_pagos"]["tipo"] as $index => $otros_pagos){
 			$datos['nomina12']['OtrosPagos'][$index]['TipoOtroPago'] = $_POST["otros_pagos"]["tipo"][$index];
